@@ -1,0 +1,26 @@
+version: '3'
+
+services:
+  db:
+    container_name: mysql_product_test
+    image: mysql:5.7
+    environment: 
+      MYSQL_DATABASE: 'product-test'
+      MYSQL_USER: 'user'
+      MYSQL_PASSWORD: 'Shamsham29'
+      MYSQL_ROOT_PASSWORD: 'Shamsham29'
+
+  product-api:
+    container_name: product-api
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    depends_on: 
+      - db
+    environment: 
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://*:5000
+    ports:
+      - 5000:5000
+      - 5001:5001
+    # command: ["./wait-for-it.sh", "db:3306"]

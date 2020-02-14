@@ -1,0 +1,16 @@
+/Users/paulorodriguez/dotnetcore-aquila-api/Domain/bin/Debug/netcoreapp3.1/Domain.deps.json
+/Users/paulorodriguez/dotnetcore-aquila-api/Domain/bin/Debug/netcoreapp3.1/Domain.dll
+/Users/paulorodriguez/dotnetcore-aquila-api/Domain/bin/Debug/netcoreapp3.1/Domain.pdb
+/Users/paulorodriguez/dotnetcore-aquila-api/Domain/obj/Debug/netcoreapp3.1/Domain.csprojAssemblyReference.cache
+/Users/paulorodriguez/dotnetcore-aquila-api/Domain/obj/Debug/netcoreapp3.1/Domain.AssemblyInfoInputs.cache
+/Users/paulorodriguez/dotnetcore-aquila-api/Domain/obj/Debug/netcoreapp3.1/Domain.AssemblyInfo.cs
+/Users/paulorodriguez/dotnetcore-aquila-api/Domain/obj/Debug/netcoreapp3.1/Domain.dll
+/Users/paulorodriguez/dotnetcore-aquila-api/Domain/obj/Debug/netcoreapp3.1/Domain.pdb
+/Users/paulorodriguez/ProductTestApp/Domain/bin/Debug/netcoreapp3.1/Domain.deps.json
+/Users/paulorodriguez/ProductTestApp/Domain/bin/Debug/netcoreapp3.1/Domain.dll
+/Users/paulorodriguez/ProductTestApp/Domain/bin/Debug/netcoreapp3.1/Domain.pdb
+/Users/paulorodriguez/ProductTestApp/Domain/obj/Debug/netcoreapp3.1/Domain.csprojAssemblyReference.cache
+/Users/paulorodriguez/ProductTestApp/Domain/obj/Debug/netcoreapp3.1/Domain.AssemblyInfoInputs.cache
+/Users/paulorodriguez/ProductTestApp/Domain/obj/Debug/netcoreapp3.1/Domain.AssemblyInfo.cs
+/Users/paulorodriguez/ProductTestApp/Domain/obj/Debug/netcoreapp3.1/Domain.dll
+/Users/paulorodriguez/ProductTestApp/Domain/obj/Debug/netcoreapp3.1/Domain.pdb
