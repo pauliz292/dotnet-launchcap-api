@@ -6773,11 +6773,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/paulorodriguez/ProductTestApp/Infrastructure/Infrastructure.csproj",
+      "projectUniqueName": "/Users/paulorodriguez/dotnet-launchcap-api/Infrastructure/Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "/Users/paulorodriguez/ProductTestApp/Infrastructure/Infrastructure.csproj",
+      "projectPath": "/Users/paulorodriguez/dotnet-launchcap-api/Infrastructure/Infrastructure.csproj",
       "packagesPath": "/Users/paulorodriguez/.nuget/packages/",
-      "outputPath": "/Users/paulorodriguez/ProductTestApp/Infrastructure/obj/",
+      "outputPath": "/Users/paulorodriguez/dotnet-launchcap-api/Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -6794,8 +6794,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/Users/paulorodriguez/ProductTestApp/Application/Application.csproj": {
-              "projectPath": "/Users/paulorodriguez/ProductTestApp/Application/Application.csproj"
+            "/Users/paulorodriguez/dotnet-launchcap-api/Application/Application.csproj": {
+              "projectPath": "/Users/paulorodriguez/dotnet-launchcap-api/Application/Application.csproj"
             }
           }
         }

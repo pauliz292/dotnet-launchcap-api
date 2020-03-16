@@ -2,16 +2,16 @@ version: '3'
 
 services:
   db:
-    container_name: mysql_product_test
+    container_name: mysql_launchcap
     image: mysql:5.7
     environment: 
-      MYSQL_DATABASE: 'product-test'
+      MYSQL_DATABASE: 'db-launchcap'
       MYSQL_USER: 'user'
       MYSQL_PASSWORD: 'Shamsham29'
       MYSQL_ROOT_PASSWORD: 'Shamsham29'
 
   product-api:
-    container_name: product-api
+    container_name: launchcap-api
     build: 
       context: .
       dockerfile: Dockerfile

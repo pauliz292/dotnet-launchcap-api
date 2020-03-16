@@ -6430,11 +6430,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/paulorodriguez/ProductTestApp/Persistence/Persistence.csproj",
+      "projectUniqueName": "/Users/paulorodriguez/dotnet-launchcap-api/Persistence/Persistence.csproj",
       "projectName": "Persistence",
-      "projectPath": "/Users/paulorodriguez/ProductTestApp/Persistence/Persistence.csproj",
+      "projectPath": "/Users/paulorodriguez/dotnet-launchcap-api/Persistence/Persistence.csproj",
       "packagesPath": "/Users/paulorodriguez/.nuget/packages/",
-      "outputPath": "/Users/paulorodriguez/ProductTestApp/Persistence/obj/",
+      "outputPath": "/Users/paulorodriguez/dotnet-launchcap-api/Persistence/obj/",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
@@ -6451,8 +6451,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "/Users/paulorodriguez/ProductTestApp/Domain/Domain.csproj": {
-              "projectPath": "/Users/paulorodriguez/ProductTestApp/Domain/Domain.csproj"
+            "/Users/paulorodriguez/dotnet-launchcap-api/Domain/Domain.csproj": {
+              "projectPath": "/Users/paulorodriguez/dotnet-launchcap-api/Domain/Domain.csproj"
             }
           }
         }

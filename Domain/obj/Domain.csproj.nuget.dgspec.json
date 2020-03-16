@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/paulorodriguez/ProductTestApp/Domain/Domain.csproj": {}
+    "/Users/paulorodriguez/dotnet-launchcap-api/Domain/Domain.csproj": {}
   },
   "projects": {
-    "/Users/paulorodriguez/ProductTestApp/Domain/Domain.csproj": {
+    "/Users/paulorodriguez/dotnet-launchcap-api/Domain/Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/paulorodriguez/ProductTestApp/Domain/Domain.csproj",
+        "projectUniqueName": "/Users/paulorodriguez/dotnet-launchcap-api/Domain/Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/paulorodriguez/ProductTestApp/Domain/Domain.csproj",
+        "projectPath": "/Users/paulorodriguez/dotnet-launchcap-api/Domain/Domain.csproj",
         "packagesPath": "/Users/paulorodriguez/.nuget/packages/",
-        "outputPath": "/Users/paulorodriguez/ProductTestApp/Domain/obj/",
+        "outputPath": "/Users/paulorodriguez/dotnet-launchcap-api/Domain/obj/",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"

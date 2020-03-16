@@ -24,3 +24,16 @@
 /Users/paulorodriguez/ProductTestApp/Application/obj/Debug/netcoreapp3.1/Application.AssemblyInfoInputs.cache
 /Users/paulorodriguez/ProductTestApp/Application/obj/Debug/netcoreapp3.1/Application.AssemblyInfo.cs
 /Users/paulorodriguez/ProductTestApp/Application/obj/Debug/netcoreapp3.1/Application.csproj.CopyComplete
+/Users/paulorodriguez/dotnet-launchcap-api/Application/obj/Debug/netcoreapp3.1/Application.dll
+/Users/paulorodriguez/dotnet-launchcap-api/Application/obj/Debug/netcoreapp3.1/Application.pdb
+/Users/paulorodriguez/dotnet-launchcap-api/Application/bin/Debug/netcoreapp3.1/Application.deps.json
+/Users/paulorodriguez/dotnet-launchcap-api/Application/bin/Debug/netcoreapp3.1/Application.dll
+/Users/paulorodriguez/dotnet-launchcap-api/Application/bin/Debug/netcoreapp3.1/Application.pdb
+/Users/paulorodriguez/dotnet-launchcap-api/Application/bin/Debug/netcoreapp3.1/Domain.dll
+/Users/paulorodriguez/dotnet-launchcap-api/Application/bin/Debug/netcoreapp3.1/Persistence.dll
+/Users/paulorodriguez/dotnet-launchcap-api/Application/bin/Debug/netcoreapp3.1/Domain.pdb
+/Users/paulorodriguez/dotnet-launchcap-api/Application/bin/Debug/netcoreapp3.1/Persistence.pdb
+/Users/paulorodriguez/dotnet-launchcap-api/Application/obj/Debug/netcoreapp3.1/Application.csprojAssemblyReference.cache
+/Users/paulorodriguez/dotnet-launchcap-api/Application/obj/Debug/netcoreapp3.1/Application.AssemblyInfoInputs.cache
+/Users/paulorodriguez/dotnet-launchcap-api/Application/obj/Debug/netcoreapp3.1/Application.AssemblyInfo.cs
+/Users/paulorodriguez/dotnet-launchcap-api/Application/obj/Debug/netcoreapp3.1/Application.csproj.CopyComplete

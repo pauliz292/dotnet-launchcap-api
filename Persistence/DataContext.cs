@@ -26,10 +26,10 @@ namespace Persistence
                 }
             };
 
-            builder.Entity<Product>()
-                .HasOne(p => p.Category)
-                .WithMany(c => c.Products)
-                .HasForeignKey(p => p.CategoryId);
+            // builder.Entity<Product>()
+            //     .HasOne(p => p.Category)
+            //     .WithMany(c => c.Products)
+            //     .HasForeignKey(p => p.CategoryId);
 
             #region UserRole Config
             builder.Entity<UserRole>(userRole =>
@@ -48,8 +48,6 @@ namespace Persistence
             });
             #endregion
         }
-
         public DbSet<Product> Products { get; set; }
-        public DbSet<Category> Categories { get; set; }
     }
 }
