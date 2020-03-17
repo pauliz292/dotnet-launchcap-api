@@ -3,7 +3,7 @@
 .log
 logs/
 .dll
-.pdb
+*.pdb
 *.cache
 
 *.swp

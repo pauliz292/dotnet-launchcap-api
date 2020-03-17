@@ -1,16 +1,16 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Application.Property;
+using Application.Borrower;
 using MediatR;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers
 {
 
-    public class PropertyController : BaseController
+    public class BorrowerController : BaseController
     {
         [HttpGet]
-        public async Task<IEnumerable<PropertyDto>> ListAllProperties()
+        public async Task<IEnumerable<BorrowerDto>> ListAllBorrowers()
         {
             return await Mediator.Send(new List.Query());
         }

@@ -10,7 +10,7 @@ services:
       MYSQL_PASSWORD: 'Shamsham29'
       MYSQL_ROOT_PASSWORD: 'Shamsham29'
 
-  product-api:
+  api:
     container_name: launchcap-api
     build: 
       context: .

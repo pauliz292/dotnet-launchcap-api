@@ -48,8 +48,6 @@ namespace Persistence
             });
             #endregion
         }
-        public DbSet<Product> Products { get; set; }
-
         public DbSet<Borrower> Borrowers { get; set; }
 
         public DbSet<Property> Properties { get; set; }

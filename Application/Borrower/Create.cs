@@ -1,43 +1,47 @@
-using Application.Errors;
-using Application.Interfaces;
-using AutoMapper;
-using Domain.Models;
-using FluentValidation;
-using MediatR;
-using Persistence;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
+using Application.Interfaces;
+using AutoMapper;
+using MediatR;
+using Persistence;
+using FluentValidation;
+using System;
+using System.Collections.Generic;
+using Application.User;
+using Application.Property;
 
-namespace Application.Product
+namespace Application.Borrower
 {
-
-    public class Update
+    public class Create
     {
         public class Command : IRequest
         {
-            public int Id { get; set; }
-
             public string Name { get; set; }
 
-            public string Description { get; set; }
+            public string Address { get; set; }
 
-            public string ImagePath { get; set; }
+            public string Email { get; set; }
+
+            public string ContactNumber { get; set; }
+
+            public string ACN { get; set; }
+
+            public virtual List<UserDetailDto> Users { get; set; }
+
+            public virtual List<PropertyDto> Properties { get; set; }
         }
 
         public class CommandValidator : AbstractValidator<Command>
         {
             public CommandValidator()
-
             {
                 RuleFor(x => x.Name).NotEmpty();
-                RuleFor(x => x.Description).NotEmpty();
+                RuleFor(x => x.Address).NotEmpty();
+                RuleFor(x => x.Email).NotEmpty();
+                RuleFor(x => x.ContactNumber).NotEmpty();
             }
         }
+
         public class Handler : IRequestHandler<Command>
         {
             private readonly DataContext _context;
@@ -52,16 +56,12 @@ namespace Application.Product
 
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
-                var ctx_product = await _context.Products.FindAsync(request.Id);
 
-                if (ctx_product == null)
-                    throw new RestException(HttpStatusCode.BadRequest, "Product not found.");
+                var borrower = _mapper.Map<Domain.Models.Borrower>(request);
 
-                //_mapper.Map(request, ctx_product);
-                var product = _mapper.Map<Domain.Models.Product>(request);
-                _context.Entry(ctx_product).CurrentValues.SetValues(product);
+                _context.Borrowers.Add(borrower);
 
-                var success = await _context.SaveChangesAsync() > 0;
+                var success = await _context.SaveChangesAsync()> 0;
 
                 if (success) return Unit.Value;
 
