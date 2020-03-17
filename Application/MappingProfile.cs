@@ -1,4 +1,5 @@
 using Application.Product;
+using Application.Property;
 using AutoMapper;
 
 namespace Application
@@ -14,11 +15,15 @@ namespace Application
                 destination.isDeleted = false;
             });
 
+            CreateMap<Property.Create.Command, Domain.Models.Property>();
+
             // List Mapping
             CreateMap<Domain.Models.Product, ProductDto>();
+            CreateMap<Domain.Models.Property, PropertyDto>();
 
             //Update Mapping
             CreateMap<Product.Update.Command, Domain.Models.Product>();
+            // CreateMap<Property.Update.Command, Domain.Models.Property>();
         }
     }
 }

@@ -7,7 +7,7 @@ using Persistence;
 using FluentValidation;
 using System;
 
-namespace Application.Product
+namespace Application.Property
 {
     public class Create
     {
@@ -15,9 +15,7 @@ namespace Application.Product
         {
             public string Name { get; set; }
 
-            public string Description { get; set; }
-
-            public string ImagePath { get; set; }
+            public string Address { get; set; }
         }
 
         public class CommandValidator : AbstractValidator<Command>
@@ -25,7 +23,7 @@ namespace Application.Product
             public CommandValidator()
             {
                 RuleFor(x => x.Name).NotEmpty();
-                RuleFor(x => x.Description).NotEmpty();
+                RuleFor(x => x.Address).NotEmpty();
             }
         }
 
@@ -44,9 +42,9 @@ namespace Application.Product
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
 
-                var product = _mapper.Map<Domain.Models.Product>(request);
+                var property = _mapper.Map<Domain.Models.Property>(request);
 
-                _context.Products.Add(product);
+                _context.Properties.Add(property);
 
                 var success = await _context.SaveChangesAsync()> 0;
 
