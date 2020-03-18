@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Models
 {
@@ -20,6 +21,7 @@ namespace Domain.Models
 
         public string ACN { get; set; }
 
+        // foreign keys
         public virtual ICollection<AppUser> Users { get; set; }
 
         public virtual ICollection<Property> Properties { get; set; }

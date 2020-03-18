@@ -51,5 +51,9 @@ namespace Persistence
         public DbSet<Borrower> Borrowers { get; set; }
 
         public DbSet<Property> Properties { get; set; }
+
+        public DbSet<Guarantor> Guarantors { get; set; }
+
+        public DbSet<Deal> Deals { get; set; }
     }
 }
