@@ -23,8 +23,8 @@ namespace Application
             CreateMap<Domain.Models.Borrower, BorrowerDto>();
 
             //Update Mapping
-            // CreateMap<Property.Update.Command, Domain.Models.Property>();
-            // CreateMap<Borrower.Update.Command, Domain.Models.Borrower>();
+            CreateMap<Property.Update.Command, Domain.Models.Property>();
+            CreateMap<Borrower.Update.Command, Domain.Models.Borrower>();
         }
     }
 }
