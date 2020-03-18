@@ -1,4 +1,5 @@
 using Application.Borrower;
+using Application.Guarantor;
 using Application.Property;
 using AutoMapper;
 
@@ -17,10 +18,12 @@ namespace Application
 
             CreateMap<Property.Create.Command, Domain.Models.Property>();
             CreateMap<Borrower.Create.Command, Domain.Models.Borrower>();
+            CreateMap<Guarantor.Create.Command, Domain.Models.Guarantor>();
 
             // List Mapping
             CreateMap<Domain.Models.Property, PropertyDto>();
             CreateMap<Domain.Models.Borrower, BorrowerDto>();
+            CreateMap<Domain.Models.Guarantor, GuarantorDto>();
 
             //Update Mapping
             CreateMap<Property.Update.Command, Domain.Models.Property>();
