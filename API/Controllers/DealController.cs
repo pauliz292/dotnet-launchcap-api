@@ -21,12 +21,12 @@ namespace API.Controllers
             return await Mediator.Send(command);
         }
 
-        // [HttpPut("{borrowerId}")]
-        // public async Task<ActionResult<Unit>> Update(int borrowerId, Update.Command command)
-        // {
-        //     command.Id = borrowerId;
-        //     return await Mediator.Send(command);
-        // }
+        [HttpPut("{dealId}")]
+        public async Task<ActionResult<Unit>> Update(int dealId, Update.Command command)
+        {
+            command.Id = dealId;
+            return await Mediator.Send(command);
+        }
 
         // [HttpDelete("{productId}")]
         // public async Task<ActionResult<Unit>> Delete(int productId, Delete.Command command)

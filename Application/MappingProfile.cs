@@ -31,6 +31,8 @@ namespace Application
             //Update Mapping
             CreateMap<Property.Update.Command, Domain.Models.Property>();
             CreateMap<Borrower.Update.Command, Domain.Models.Borrower>();
+            CreateMap<Guarantor.Update.Command, Domain.Models.Guarantor>();
+            CreateMap<Deal.Update.Command, Domain.Models.Deal>();
         }
     }
 }
