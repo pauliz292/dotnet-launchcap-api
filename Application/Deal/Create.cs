@@ -50,7 +50,7 @@ namespace Application.Deal
 
             public BorrowerDto Borrower { get; set; }
 
-            public List<GuarantorDto> Guarantors { get; set; }
+            public List<Domain.Models.Guarantor> Guarantors { get; set; }
         }
 
         public class CommandValidator : AbstractValidator<Command>
