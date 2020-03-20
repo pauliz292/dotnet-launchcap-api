@@ -49,10 +49,9 @@ namespace Application.User
                 RuleFor(x => x.FirstName).NotEmpty();
                 RuleFor(x => x.LastName).NotEmpty();
                 RuleFor(x => x.Gender).NotEmpty();
-                RuleFor(x => x.Birthday).NotEmpty();
-                RuleFor(x => x.Occupation).NotEmpty();
                 RuleFor(x => x.Address).NotEmpty();
                 RuleFor(x => x.PhoneNumber).NotEmpty();
+                RuleFor(x => x.Role).NotEmpty();
             }
         }
 
@@ -85,10 +84,6 @@ namespace Application.User
 
                 if (await _context.Users.Where(x => x.UserName == request.Username).AnyAsync())
                     throw new RestException(HttpStatusCode.BadRequest, new { Username = "Username already exists" });
-
-                request.FirstName = request.FirstName.ToUpperFirstLetter();
-                request.MiddleName = request.MiddleName.ToUpperFirstLetter();
-                request.LastName = request.LastName.ToUpperFirstLetter();
 
                 var user = _mapper.Map<AppUser>(request);
                 user.IsActive = true;

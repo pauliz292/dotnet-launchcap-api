@@ -11,7 +11,7 @@ namespace Application.User
             CreateMap<Register.Command, AppUser>();
             CreateMap<AppUser, UserDetailDto>()
                 .ForMember(u => u.FullName, o => o.MapFrom(s => ($"{s.LastName}, {s.FirstName} {s.MiddleName}").TrimEnd()))
-                .ForMember(u => u.Role, o => o.MapFrom(s => s.UserRoles.Any() ? s.UserRoles.SingleOrDefault().Role.Name : "Member"));
+                .ForMember(u => u.Role, o => o.MapFrom(s => s.UserRoles.Any() ? s.UserRoles.SingleOrDefault().Role.Name : "User"));
         }
     }
 }
