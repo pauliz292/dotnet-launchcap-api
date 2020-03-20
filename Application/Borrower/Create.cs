@@ -7,8 +7,7 @@ using Persistence;
 using FluentValidation;
 using System;
 using System.Collections.Generic;
-using Application.User;
-using Application.Property;
+using Domain.Models;
 
 namespace Application.Borrower
 {
@@ -26,9 +25,9 @@ namespace Application.Borrower
 
             public string ACN { get; set; }
 
-            public virtual List<UserDetailDto> Users { get; set; }
+            public virtual List<AppUser> Users { get; set; }
 
-            public virtual List<PropertyDto> Properties { get; set; }
+            public virtual List<Domain.Models.Property> Properties { get; set; }
         }
 
         public class CommandValidator : AbstractValidator<Command>
